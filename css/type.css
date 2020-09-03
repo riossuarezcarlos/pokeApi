@@ -1,0 +1,81 @@
+.type{
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+}
+
+.container{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    margin: 10px auto; 
+}
+
+.box{
+    padding: 1px;
+    flex: 1 1 10%;
+}
+
+.normal{
+    background-color: black;
+}
+.fighting{
+    background-color: black;
+}
+.flying{
+    background-color: black;
+}
+.poison{
+    background-color: black;
+}
+.ground{
+    background-color: black;
+}
+.rock{
+    background-color: black;
+}
+.bug{
+    background-color: black;
+}
+.ghost{
+    background-color: black;
+}
+.steel{
+    background-color: black;
+}
+.fire{
+    background-color: black;
+}
+.water{
+    background-color: black;
+}
+.grass{
+    background-color: black;
+}
+.electric{
+    background-color: black;
+}
+.psychic{
+    background-color: black;
+}
+.ice{
+    background-color: black;
+}
+.dragon{
+    background-color: black;
+}
+.dark{
+    background-color: black;
+}
+.fairy{
+    background-color: black;
+}
+.unknown{
+    background-color: black;
+}
+.shadow{
+    background-color: black;
+}
