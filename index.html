@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/type.css">
+    <link rel="stylesheet" href="./css/pokemon.css">
 
     <!-- Agregar etiquetas para FB y TW --> 
 
@@ -31,22 +32,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#" id="linkPokedex" >Tipo</span></a>
+                  <a class="nav-link" href="#" id="linkTipos" >Tipos</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#"></a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Pokemón
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Generaciones</a>
-                    <a class="dropdown-item" href="#">Tipos</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Otros</a>
-                  </div>
-                </li> 
+                </li>  
               </ul>
               <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Búsqueda" aria-label="Search">
@@ -61,14 +51,16 @@
             
             Filtro
         </div>
-        <div id="pokeContainer">
+        <div id="pokeContainer" class="padre">
             Pokedex
         </div>
     </main>
 
-    <footer>
-        Footer    
-    </footer>
+<!-- Footer -->
+<footer>
+ Footer
+</footer>
+<!-- Footer -->
 
     <!--  getBootstrap  -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -76,9 +68,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
     <!-- API -->
-
-    <script type="module" src="./js/type_XHR.js"></script>
-    <script type="module" src="./js/pokeType_Promise.js"></script>
+    <script src="./js/helper.js"></script>
+    <script type="module" src="./js/filter.js"></script>
+    <script src="./js/pokemonList.js"></script>
 
 </body>
 </html>
