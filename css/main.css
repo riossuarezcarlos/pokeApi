@@ -13,3 +13,73 @@ body{
     width: 50px;
     height: 40px;
 }
+
+
+.contacto{
+    height: 200px;
+    width: 98vw;
+    margin: 0 auto;
+    padding: 0 auto;   
+    background-color:#cfd9df;
+    display: flex; 
+}
+
+.contacto > div:first-child{
+    flex: 1 1 60%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contacto > div:last-child{
+    flex: 1 1 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+button{
+    padding: 8px 6px 8px 6px;
+    border-radius: 6px;
+}
+  
+.contact{
+    color: #219DF0;
+    background-color: transparent;
+    border: 1px solid #219DF0; 
+}
+
+
+footer{
+    padding: 30px 0 0 0;
+    height: 50px;
+    width: 100%;
+}
+
+footer > ul{
+    width: 98vw;
+    height: 100px;
+    margin: 0 auto;
+    padding: 0 auto;   
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    background-color: #303030 ;
+    color: white;
+}
+
+footer .logo{
+    flex: 0 1 30%;    
+}
+
+footer .logo > img{
+    width: 80px;
+    height: 25px;
+}
+
+footer>ul>li{
+    list-style-type: none;
+    text-align: center;
+    height: 30px;
+}

@@ -1,28 +1,71 @@
-.padre{
+.pokecontainer{
     margin: 0px;
     width: 100vw;
-    display: flex;
+    height: auto;
+    display: flex; 
     flex-wrap: wrap; 
     justify-content: space-evenly;
     align-items: center;
 }
 
-.hijo{
-    margin: 0px;
-    width: 80px;
-    height: 300px;
-    flex: 1 1 25%; 
+.card{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-basis: 31%;
+    flex-direction: row;
     border-radius: 10px;
     box-shadow: 1px gray 0.5;
     border: 1px solid black;
-    padding: 10px auto;
+    margin: 10px; 
+    width: 300px;
+    height: 200px;
+
+    transition: all 250ms;
+    background-color: #eeeeee;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+    animation: mianimacion 0.5s ease-out normal backwards;
 }
 
-.hijo img{
+
+.card:hover{
+    box-shadow: 4px 4px 4px gray;
+    transform: translate(0,5px) scale(1.01);   
+}
+
+.cardimg{
+    flex: 1 1 60%;
+    width: 100px;
+    margin: 10px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.cardimg img{
+    width: 50%;
+    object-fit: cover;
+} 
+
+.cardinfo{
+    flex: 1 1 40%;
     width: 50%;
     height: auto;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+}
+ 
+.cardtype button{
+    margin: 5px;
 }
 
+@keyframes mianimacion{
+    0%{
+        transform: scale(0);
+    }
+    70%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
