@@ -1,6 +1,8 @@
 let btnTipos = document.getElementById("linkTipos");
+let btnInicio = document.getElementById("linkInicio");
 let btnGeneraciones = document.getElementById("linkGeneraciones");
 let divFilters = document.getElementById("pokeFiltro");
+let divContainer = document.getElementById("pokeContainer");  
  
 function showFilters(filters){  
     let filtersHTML = '';
@@ -13,11 +15,31 @@ function showFilters(filters){
         filtersHTML += button;
     }); 
     divFilters.innerHTML = filtersHTML;
+    divContainer.innerHTML = '';
 }
+
+
+function showHome(){
+    let home = `<div class='home'>`+
+                `<img src='${urlLogo}' alt='Imagen no disponible'>` + 
+                `<h3>The RESTful Pokémon API</h3>` + 
+                `<h2>Serving over 60,000,000 API calls each month!</h2>` + 
+               `</div>`;
+    divContainer.innerHTML = home;
+    divFilters.innerHTML = '';
+}
+
 
 btnTipos.addEventListener("click", async () => {
     const types = await proccessRequestAsync(urlType);
     showFilters(types.results)
 })
 
+btnInicio.addEventListener("click",  () => { 
+    showHome();
+})
+ 
+document.addEventListener("DOMContentLoaded",  () => { 
+    showHome();
+})
  

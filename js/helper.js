@@ -1,6 +1,7 @@
 const urlType = 'https://pokeapi.co/api/v2/type/';
 const urlGeneration = 'https://pokeapi.co/api/v2/generation/';
 const urlPokemon = 'https://pokeapi.co/api/v2/pokemon/';
+const urlLogo = 'https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png';
 
 const colors = [
     {
