@@ -20,10 +20,11 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: auto;
+    align-items: center; 
     background-color: #303030 ;
     color: white;
+    margin: 0 auto;
+    padding: 0 auto;   
 }
 
 .contacto{

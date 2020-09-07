@@ -3,6 +3,7 @@ let btnInicio = document.getElementById("linkInicio");
 let btnGeneraciones = document.getElementById("linkGeneraciones");
 let divFilters = document.getElementById("pokeFiltro");
 let divContainer = document.getElementById("pokeContainer");  
+let divHome = document.getElementById("home");  
  
 function showFilters(filters){  
     let filtersHTML = '';
@@ -15,7 +16,7 @@ function showFilters(filters){
         filtersHTML += button;
     }); 
     divFilters.innerHTML = filtersHTML;
-    divContainer.innerHTML = '';
+    divHome.innerHTML = '';
 }
 
 
@@ -25,7 +26,7 @@ function showHome(){
                 `<h3>The RESTful Pokémon API</h3>` + 
                 `<h2>Serving over 60,000,000 API calls each month!</h2>` + 
                `</div>`;
-    divContainer.innerHTML = home;
+    divHome.innerHTML = home;
     divFilters.innerHTML = '';
 }
 

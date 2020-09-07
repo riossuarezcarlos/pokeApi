@@ -1,6 +1,6 @@
 .pokecontainer{
     margin: 0px;
-    width: 100vw;
+    width: 98vw;
     height: auto;
     display: flex; 
     flex-wrap: wrap; 
@@ -10,7 +10,7 @@
 
 .card{
     display: flex;
-    flex-basis: 31%;
+    flex-basis: 30%;
     flex-direction: row;
     border-radius: 10px;
     box-shadow: 1px gray 0.5;
@@ -41,8 +41,8 @@
 }
 
 .cardimg img{
-    width: 50%;
-    object-fit: cover;
+    width: 60%;
+    object-fit: contain;
 } 
 
 .cardinfo{

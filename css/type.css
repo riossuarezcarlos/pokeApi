@@ -11,8 +11,10 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 10px auto; 
+    padding-left: 30px ;
+    padding: 10px auto; 
 }
 
 .box{
